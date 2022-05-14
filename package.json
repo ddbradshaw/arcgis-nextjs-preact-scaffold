@@ -1,5 +1,5 @@
 {
-  "name": "preact-arcgis-nextjs",
+  "name": "arcgis-nextjs-preact-scaffold",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@arcgis/core": "^4.23.7",
     "next": "12.1.6",
+    "preact": "^10.7.2",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "recoil": "^0.7.3-alpha.2"
   },
   "devDependencies": {
     "@types/node": "17.0.32",

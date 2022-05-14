@@ -3,7 +3,7 @@ import styles from './webmap.module.css';
 import ArcGISMap from '@arcgis/core/Map';
 import MapView from '@arcgis/core/views/MapView';
 import { useRecoilState } from 'recoil';
-import mapData from '../atoms/mapState';
+import { mapData } from '../atoms/mapState';
 
 const Mapper = () => {
   const mapRef = useRef<HTMLDivElement>(null);

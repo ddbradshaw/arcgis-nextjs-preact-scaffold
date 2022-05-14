@@ -5,7 +5,7 @@ interface MapState {
   zoom?: number;
 }
 
-const mapData = atom({
+export const mapData = atom({
   key: 'mapData', // unique ID (with respect to other atoms/selectors)
   default: <MapState>{
     location: [-118, 34],
@@ -13,4 +13,7 @@ const mapData = atom({
   },
 });
 
-export default mapData;
+export const getLocation = selector({
+  key: 'locSelector',
+  get: ({ get }) => get(mapData).location[0] + ', ' + get(mapData).location[1],
+});
